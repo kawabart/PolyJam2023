@@ -280,7 +280,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e59827318f43249ba8db9fe9f1bf9fba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 1000
 --- !u!1 &715240515
 GameObject:
   m_ObjectHideFlags: 0
@@ -542,6 +542,7 @@ GameObject:
   - component: {fileID: 1507286918}
   - component: {fileID: 1507286923}
   - component: {fileID: 1507286922}
+  - component: {fileID: 1507286924}
   m_Layer: 0
   m_Name: Rootman
   m_TagString: Untagged
@@ -668,6 +669,19 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!114 &1507286924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1507286917}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a49d4725b56c4e46a14b0e9389c3c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cameraObject: {fileID: 963194225}
 --- !u!1 &1993752560
 GameObject:
   m_ObjectHideFlags: 3
