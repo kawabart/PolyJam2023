@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 5120898748162749148}
   - component: {fileID: 7229438499942421289}
   - component: {fileID: 2786177168526839686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 1057952545628559463}
   - component: {fileID: 5194641004298865655}
   - component: {fileID: 6113898900424098750}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cube_2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   - component: {fileID: 1141214221674453803}
   - component: {fileID: 8472999346692506546}
   - component: {fileID: 8592763750144600853}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cube_1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -259,7 +259,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6037705033744628512}
   - component: {fileID: 3716936120898662098}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: turkuc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   - component: {fileID: 2751600672792114284}
   - component: {fileID: 8056893476968787396}
   - component: {fileID: 7341080274361792874}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: cube_3
   m_TagString: Untagged
   m_Icon: {fileID: 0}

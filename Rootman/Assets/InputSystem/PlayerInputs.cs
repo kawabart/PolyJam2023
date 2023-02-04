@@ -7,6 +7,7 @@ public class PlayerInputs : MonoBehaviour
 {
     public Vector2 look;
     public bool rootUsed;
+    public bool shooting;
     public bool cursorLocked = true;
 
 
@@ -18,6 +19,11 @@ public class PlayerInputs : MonoBehaviour
     public void OnShootRoot(InputValue value)
     {
         rootUsed = value.isPressed;
+    }
+
+    public void OnShootEnemy(InputValue value)
+    {
+        shooting = value.isPressed;
     }
 
     // Start is called before the first frame update
