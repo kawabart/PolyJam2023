@@ -6,6 +6,8 @@ using UnityEngine.InputSystem;
 public class PlayerInputs : MonoBehaviour
 {
     public Vector2 look;
+    public bool cursorLocked = true;
+
 
     public void OnLook(InputValue value)
     {
@@ -22,5 +24,15 @@ public class PlayerInputs : MonoBehaviour
     void Update()
     {
 
+    }
+
+    private void OnApplicationFocus(bool hasFocus)
+    {
+        SetCursorState(cursorLocked);
+    }
+
+    private void SetCursorState(bool newState)
+    {
+        Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
     }
 }
