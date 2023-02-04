@@ -7,6 +7,7 @@ public class RootShoot : MonoBehaviour
 {
     [SerializeField]
     private GameObject cameraObject;
+    public float distanceCompress = 1f;
     private SpringJoint joint;
     private PlayerInputs playerInputs;
     private bool isConnected = false;
@@ -29,7 +30,7 @@ public class RootShoot : MonoBehaviour
                 if (Physics.Raycast(transform.position, cameraObject.transform.forward, out hit))
                 {
                     joint.connectedAnchor = hit.point;
-                    joint.maxDistance = 0.5f * hit.distance;
+                    joint.maxDistance = distanceCompress * hit.distance;
                     isConnected = true;
                 }
             }
