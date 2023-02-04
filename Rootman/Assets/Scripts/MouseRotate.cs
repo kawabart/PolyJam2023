@@ -59,7 +59,6 @@ public class MouseRotate : MonoBehaviour
 
             _cinemachineTargetYaw += input.look.x * deltaTimeMultiplier;
             _cinemachineTargetPitch += input.look.y * deltaTimeMultiplier;
-            Debug.Log($"{_cinemachineTargetYaw}, {_cinemachineTargetPitch}");
         }
 
         // clamp our rotations so our values are limited 360 degrees
