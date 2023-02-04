@@ -6,12 +6,18 @@ using UnityEngine.InputSystem;
 public class PlayerInputs : MonoBehaviour
 {
     public Vector2 look;
+    public bool rootUsed;
     public bool cursorLocked = true;
 
 
     public void OnLook(InputValue value)
     {
         look = value.Get<Vector2>();
+    }
+
+    public void OnShootRoot(InputValue value)
+    {
+        rootUsed = value.isPressed;
     }
 
     // Start is called before the first frame update

@@ -8,24 +8,37 @@ public class RootShoot : MonoBehaviour
     [SerializeField]
     private GameObject cameraObject;
     private SpringJoint joint;
+    private PlayerInputs playerInputs;
+    private bool isConnected = false;
 
     // Start is called before the first frame update
     void Start()
     {
         joint = GetComponent<SpringJoint>();
+        playerInputs = GetComponent<PlayerInputs>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (playerInputs.rootUsed)
         {
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, cameraObject.transform.forward, out hit))
+            if (!isConnected)
             {
-                joint.connectedAnchor = hit.point;
-                joint.maxDistance = 0.5f * hit.distance;
+                RaycastHit hit;
+                if (Physics.Raycast(transform.position, cameraObject.transform.forward, out hit))
+                {
+                    joint.connectedAnchor = hit.point;
+                    joint.maxDistance = 0.5f * hit.distance;
+                    isConnected = true;
+                }
             }
+        }
+        else
+        {
+            isConnected = false;
+            joint.connectedAnchor = gameObject.transform.TransformPoint(joint.anchor);
+            joint.maxDistance = float.MaxValue;
         }
     }
 }
