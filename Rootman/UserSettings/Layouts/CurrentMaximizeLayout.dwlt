@@ -114,7 +114,7 @@ MonoBehaviour:
   m_LastWindowPixelSize: {x: 977, y: 432}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000000000000
+  m_LowResolutionForAspectRatios: 00000000000000000000
   m_XRRenderMode: 0
   m_RenderTexture: {fileID: 0}
 --- !u!114 &3
@@ -322,9 +322,10 @@ MonoBehaviour:
     m_OriginalText: 
   m_ViewMode: 0
   m_StartGridSize: 64
-  m_LastFolders: []
+  m_LastFolders:
+  - Assets/InputSystem
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\okielczyk\Desktop\GameJam\Repo\PolyJam2023\Rootman
+  m_LastProjectPath: /Users/anon/Workspace/PolyJam2023/Rootman
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
@@ -785,8 +786,8 @@ MonoBehaviour:
     speed: 2
     m_Value: 0
   m_CameraSettings:
-    m_Speed: 2
-    m_SpeedNormalized: 1
+    m_Speed: 1
+    m_SpeedNormalized: 0.5
     m_SpeedMin: 0.001
     m_SpeedMax: 2
     m_EasingEnabled: 1
@@ -865,12 +866,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 1
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
+  m_Name: InspectorWindow
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
+    x: 1417
     y: 0
     width: 473
     height: 765
