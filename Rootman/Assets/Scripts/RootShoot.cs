@@ -41,7 +41,7 @@ public class RootShoot : MonoBehaviour
         else
         {
             isConnected = false;
-            joint.connectedAnchor = gameObject.transform.TransformPoint(joint.anchor);
+            joint.connectedAnchor = transform.TransformPoint(joint.anchor);
             joint.maxDistance = float.MaxValue;
             lineRenderer.enabled = false;
         }

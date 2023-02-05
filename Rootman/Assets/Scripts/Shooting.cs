@@ -20,14 +20,12 @@ public class Shooting : MonoBehaviour
     {
         if (playerInputs.shooting && Time.time - lastShootTimeSeconds >= shootingTimeSeconds)
         {
-            Debug.Log("Shoot");
             lastShootTimeSeconds = Time.time;
             RaycastHit hit;
             LayerMask layerMask = LayerMask.GetMask("Enemy");
             Debug.Log(layerMask.value.ToString());
             if (Physics.Raycast(transform.position, cameraObject.transform.forward, out hit, float.MaxValue, layerMask.value))
             {
-                Debug.Log("Hit");
                 Destroy(hit.transform.gameObject);
             }
         }
