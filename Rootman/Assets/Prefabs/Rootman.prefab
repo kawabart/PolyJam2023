@@ -735,6 +735,8 @@ GameObject:
   - component: {fileID: 919132148378115237}
   - component: {fileID: 919132148378115236}
   - component: {fileID: 919132148378115238}
+  - component: {fileID: 3613770016049350418}
+  - component: {fileID: 7550024874870699414}
   m_Layer: 0
   m_Name: Rootman
   m_TagString: Untagged
@@ -799,7 +801,7 @@ SpringJoint:
   m_GameObject: {fileID: 4877587511847677111}
   m_ConnectedBody: {fileID: 0}
   m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 0.69, y: 1.45, z: 0}
+  m_Anchor: {x: 0.69, y: 1.6, z: 0}
   m_AutoConfigureConnectedAnchor: 0
   m_ConnectedAnchor: {x: 17.23, y: 28.64, z: 8.87}
   serializedVersion: 2
@@ -911,7 +913,7 @@ LineRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 809f4ab9d96264a6db1be1e4b56ebce7, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -964,7 +966,7 @@ LineRenderer:
       key6: {r: 0, g: 0, b: 0, a: 0}
       key7: {r: 0, g: 0, b: 0, a: 0}
       ctime0: 0
-      ctime1: 65535
+      ctime1: 64764
       ctime2: 0
       ctime3: 0
       ctime4: 0
@@ -1015,7 +1017,37 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cameraObject: {fileID: 0}
+  killPoints: 10
   shootingTimeSeconds: 0.3
+--- !u!114 &3613770016049350418
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877587511847677111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a81ef88a595410aa163662c010fe7a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text: {fileID: 0}
+  timeToAddPoint: 1
+--- !u!114 &7550024874870699414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4877587511847677111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d718e4dd372b41ff8c3c83894617257, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  port: COM3
+  minValue: 2
+  maxSpeed: 70
 --- !u!1 &4892056101012027605
 GameObject:
   m_ObjectHideFlags: 0
