@@ -32,17 +32,18 @@ public class ArduinoInput : MonoBehaviour
 
     void Awake()
     {
-        string[] ports = SerialPort.GetPortNames();
-        if(ports.Length > 0)
-        {
-            _serialPort = new SerialPort(ports[0], 9600);
-            Debug.Log("Ports[0] = " + ports[0]);
-        } else
-        {
-            _serialPort = new SerialPort(port, 9600);
-            Debug.Log("nie wiem");
-        }
+        // string[] ports = SerialPort.GetPortNames();
+        // if(ports.Length > 0)
+        // {
+        //     _serialPort = new SerialPort(ports[0], 9600);
+        //     Debug.Log("Ports[0] = " + ports[0]);
+        // } else
+        // {
+        //     _serialPort = new SerialPort(port, 9600);
+        //     Debug.Log("nie wiem");
+        // }
 
+        _serialPort = new SerialPort("/dev/tty.usbserial-14310", 115200);
         try
         {
             Debug.Log("Try to open");
