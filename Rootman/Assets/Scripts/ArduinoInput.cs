@@ -36,15 +36,19 @@ public class ArduinoInput : MonoBehaviour
         if(ports.Length > 0)
         {
             _serialPort = new SerialPort(ports[0], 9600);
+            Debug.Log("Ports[0] = " + ports[0]);
         } else
         {
             _serialPort = new SerialPort(port, 9600);
+            Debug.Log("nie wiem");
         }
 
         try
         {
+            Debug.Log("Try to open");
             _serialPort.Open();
             _isSerialOpened = true;
+            Debug.Log("Opened");
         }
         catch (IOException e)
         {
@@ -55,7 +59,11 @@ public class ArduinoInput : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("on Update");
+        Debug.Log("isSerialOpened = " + _isSerialOpened);
+        Debug.Log("_serialPort.BytesToRead = " + _serialPort.BytesToRead);
         if (!_isSerialOpened || _serialPort.BytesToRead <= 0) return;
+        Debug.Log(_serialPort.ReadLine());
         var values = _serialPort.ReadLine().Split(';');
         if (values.Length != 5) return;
 
