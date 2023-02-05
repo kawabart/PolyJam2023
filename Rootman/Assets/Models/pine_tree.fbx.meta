@@ -3,7 +3,22 @@ guid: cf8a3da2d65c34039adfc930e801997e
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Br\u0105z"
+    second: {fileID: 6795462705980167066, guid: 8b494faf6678848938197b8a6edfe146, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Sosna
+    second: {fileID: 963798294112862009, guid: 8b494faf6678848938197b8a6edfe146, type: 3}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: "Ziele\u0144"
+    second: {fileID: 2100000, guid: b0a2329c70c85451cb3a2fe7914791e2, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
