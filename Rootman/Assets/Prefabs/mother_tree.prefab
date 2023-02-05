@@ -11,7 +11,10 @@ GameObject:
   - component: {fileID: 7512398896034032108}
   - component: {fileID: 6912670745842296393}
   - component: {fileID: 8649807548322075267}
-  - component: {fileID: 8055778112880266757}
+  - component: {fileID: 7724573766291740137}
+  - component: {fileID: 5926194611297261252}
+  - component: {fileID: 3283156423750466544}
+  - component: {fileID: 4805552796501958509}
   m_Layer: 0
   m_Name: mother_tree
   m_TagString: Untagged
@@ -85,8 +88,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &8055778112880266757
-MeshCollider:
+--- !u!136 &7724573766291740137
+CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -95,7 +98,48 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 4
-  m_Convex: 0
-  m_CookingOptions: 30
-  m_Mesh: {fileID: 3821112130781867369, guid: 51111d46d9c9d4711801750ebc7a0737, type: 3}
+  m_Radius: 2.13
+  m_Height: 3.29
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!136 &5926194611297261252
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136717026106897238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.67
+  m_Height: 6
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 1.9}
+--- !u!136 &3283156423750466544
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136717026106897238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 1.3
+  m_Height: 9.95
+  m_Direction: 2
+  m_Center: {x: 0, y: 0, z: 7.2}
+--- !u!65 &4805552796501958509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7136717026106897238}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 28, y: 28, z: 15}
+  m_Center: {x: 0, y: 0, z: 14.8}
